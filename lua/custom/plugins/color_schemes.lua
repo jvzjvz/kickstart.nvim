@@ -43,18 +43,18 @@ return {
     'whizikxd/naysayer-colors.nvim',
     lazy = false,
   },
-  {
-    'ellisonleao/gruvbox.nvim',
-    config = function()
-      require('gruvbox').setup {
-        bold = false,
-        contrast = 'hard',
-        palette_overrides = {
-          -- light0 = ''
-        },
-      }
-    end,
-  },
+  -- {
+  --   'ellisonleao/gruvbox.nvim',
+  --   config = function()
+  --     require('gruvbox').setup {
+  --       bold = false,
+  --       contrast = 'hard',
+  --       palette_overrides = {
+  --         -- light0 = ''
+  --       },
+  --     }
+  --   end,
+  -- },
   -- {
   --   'morhetz/gruvbox',
   --   -- config = function()
@@ -74,15 +74,15 @@ return {
     end,
   },
   { 'EdenEast/nightfox.nvim' },
-  -- {
-  --   'fenetikm/falcon',
-  --   -- config = function()
-  --   --   vim.g.falcon_background = 0
-  --   --   vim.g.falcon_inactive = 0
-  --   --   -- vim.cmd.colorscheme 'falcon'
-  --   --   -- vim.cmd 'highlight Normal guibg=#000000 ctermbg=0'
-  --   -- end,
-  -- },
+  {
+    'fenetikm/falcon',
+    -- config = function()
+    --   vim.g.falcon_background = 0
+    --   vim.g.falcon_inactive = 0
+    --   -- vim.cmd.colorscheme 'falcon'
+    --   -- vim.cmd 'highlight Normal guibg=#000000 ctermbg=0'
+    -- end,
+  },
   -- { 'ayu-theme/ayu-vim' },
   { 'Shatur/neovim-ayu' },
   -- { 'HoNamDuong/hybrid.nvim', name = 'hybrid' },
@@ -93,8 +93,8 @@ return {
     dependencies = { 'rktjmp/lush.nvim' },
     lazy = false,
     -- config = function()
-    --   vim.g.zenbones_compat = 1
-    --   vim.cmd.colorscheme 'zenbones'
+    --   --   vim.g.zenbones_compat = 1
+    vim.cmd.colorscheme 'kanagawabones',
     -- end,
   },
 
@@ -114,9 +114,9 @@ return {
           -- end
         end,
 
-        highlights = function(hl, c, opts)
-          hl.Normal = { bg = c.black }
-        end,
+        -- highlights = function(hl, c, opts)
+        --   hl.Normal = { bg = c.black }
+        -- end,
       }
       --
       -- vim.cmd.colorscheme 'tairiki-dark'
@@ -151,7 +151,9 @@ return {
     'wtfox/jellybeans.nvim',
     lazy = false,
     priority = 1000,
-    opts = {}, -- Optional
+    opts = {
+      italics = false,
+    }, -- Optional
   },
   {
     'catppuccin/nvim',
@@ -534,4 +536,10 @@ return {
   { 'sderev/alabaster.vim' },
   { 'tobi-wan-kenobi/zengarden' },
   { 'rafikdraoui/couleurs.vim' },
+  {
+    'ricardoraposo/gruvbox-minor.nvim',
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
 }
