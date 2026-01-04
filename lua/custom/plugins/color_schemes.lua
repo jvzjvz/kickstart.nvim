@@ -55,12 +55,12 @@ return {
   --     }
   --   end,
   -- },
-  -- {
-  --   'morhetz/gruvbox',
-  --   -- config = function()
-  --   -- vim.g.gruvbox_contrast_dark = 'hard'
-  --   -- end,
-  -- },
+  {
+    'morhetz/gruvbox',
+    config = function()
+      vim.g.gruvbox_contrast_dark = 'hard'
+    end,
+  },
   -- { 'luisiacc/gruvbox-baby' },
   {
     'rebelot/kanagawa.nvim',
@@ -94,7 +94,7 @@ return {
     lazy = false,
     config = function()
       --   --   vim.g.zenbones_compat = 1
-      vim.cmd.colorscheme 'kanagawabones'
+      -- vim.cmd.colorscheme 'kanagawabones'
     end,
   },
 
@@ -234,11 +234,11 @@ return {
   -- },
   -- { 'NLKNguyen/papercolor-theme' },
   -- { 'dikiaap/minimalist' },
-  -- {
-  --   'steguiosaur/fullerene.nvim',
-  --   lazy = false,
-  --   priority = 1000,
-  -- },
+  {
+    'steguiosaur/fullerene.nvim',
+    lazy = false,
+    priority = 1000,
+  },
   -- {
   --   'nyngwang/memoonry.nvim',
   --   config = function()
@@ -299,7 +299,7 @@ return {
     'JCodV/srcery-vim',
     -- 'srcery-colors/srcery-vim',
     config = function()
-      vim.cmd.colorscheme 'srcery'
+      -- vim.cmd.colorscheme 'srcery'
       -- local light_bronze = '#b99468'
       -- vim.g.srcery_bright_white = light_bronze
     end,
@@ -536,10 +536,10 @@ return {
   { 'sderev/alabaster.vim' },
   { 'tobi-wan-kenobi/zengarden' },
   { 'rafikdraoui/couleurs.vim' },
-  {
-    'ricardoraposo/gruvbox-minor.nvim',
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
+  -- {
+  --   'ricardoraposo/gruvbox-minor.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {},
+  -- },
 }
