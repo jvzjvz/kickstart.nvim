@@ -5,8 +5,11 @@ return {
     -- See `:help ibl`
     main = 'ibl',
     opts = {
-      scope = { enabled = false },
-      indent = { char = '│' },
+      scope = { enabled = true },
+      indent = { char = '▏', smart_indent_cap = true },
     },
+    -- config = function()
+    --   require('indent_blankline').setup {
   },
+  -- end, },
 }

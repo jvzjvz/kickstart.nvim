@@ -1,31 +1,31 @@
 return {
   {
-    'JCodV/twilight.nvim',
+    'jvzjvz/twilight.nvim',
     -- config = function()
     --   vim.cmd.colorscheme 'twilight'
     -- end,
   },
-  {
-    'JCodV/autumn-night.nvim',
-    dependencies = { 'rktjmp/lush.nvim' },
-    -- config = function()
-    --   vim.cmd.colorscheme 'autumn_night'
-    -- end,
-  },
-  {
-    'JCodV/dragon.nvim',
-    dependencies = { 'rktjmp/lush.nvim' },
-    -- config = function()
-    --   vim.cmd.colorscheme 'dragon'
-    -- end,
-  },
-  {
-    'JCodV/vedra.nvim',
-    dependencies = { 'rktjmp/lush.nvim' },
-    -- config = function()
-    --   vim.cmd.colorscheme 'dragon'
-    -- end,
-  },
+  -- {
+  --   'jvzjvz/autumn-night.nvim',
+  --   dependencies = { 'rktjmp/lush.nvim' },
+  --   -- config = function()
+  --   --   vim.cmd.colorscheme 'autumn_night'
+  --   -- end,
+  -- },
+  -- {
+  --   'jvzjvz/dragon.nvim',
+  --   dependencies = { 'rktjmp/lush.nvim' },
+  --   -- config = function()
+  --   --   vim.cmd.colorscheme 'dragon'
+  --   -- end,
+  -- },
+  -- {
+  --   'jvzjvz/vedra.nvim',
+  --   dependencies = { 'rktjmp/lush.nvim' },
+  --   -- config = function()
+  --   --   vim.cmd.colorscheme 'dragon'
+  --   -- end,
+  -- },
   -- {
   --   'cdmill/neomodern.nvim',
   --   lazy = false,
@@ -39,10 +39,10 @@ return {
   -- },
   -- { 'YorickPeterse/Autumn.vim' },
   { 'YorickPeterse/vim-paper' },
-  {
-    'whizikxd/naysayer-colors.nvim',
-    lazy = false,
-  },
+  -- {
+  --   'whizikxd/naysayer-colors.nvim',
+  --   lazy = false,
+  -- },
   -- {
   --   'ellisonleao/gruvbox.nvim',
   --   config = function()
@@ -55,38 +55,38 @@ return {
   --     }
   --   end,
   -- },
-  {
-    'morhetz/gruvbox',
-    config = function()
-      vim.g.gruvbox_contrast_dark = 'hard'
-    end,
-  },
+  -- {
+  --   'morhetz/gruvbox',
+  --   config = function()
+  --     vim.g.gruvbox_contrast_dark = 'hard'
+  --   end,
+  -- },
   -- { 'luisiacc/gruvbox-baby' },
-  {
-    'rebelot/kanagawa.nvim',
-    config = function()
-      require('kanagawa').setup {
-        commentStyle = {
-          italic = false,
-        },
-        theme = 'dragon',
-      }
-    end,
-  },
-  { 'EdenEast/nightfox.nvim' },
-  {
-    'fenetikm/falcon',
-    -- config = function()
-    --   vim.g.falcon_background = 0
-    --   vim.g.falcon_inactive = 0
-    --   -- vim.cmd.colorscheme 'falcon'
-    --   -- vim.cmd 'highlight Normal guibg=#000000 ctermbg=0'
-    -- end,
-  },
+  -- {
+  --   'rebelot/kanagawa.nvim',
+  --   config = function()
+  --     require('kanagawa').setup {
+  --       commentStyle = {
+  --         italic = false,
+  --       },
+  --       theme = 'dragon',
+  --     }
+  --   end,
+  -- },
+  -- { 'EdenEast/nightfox.nvim' },
+  -- {
+  --   'fenetikm/falcon',
+  --   -- config = function()
+  --   --   vim.g.falcon_background = 0
+  --   --   vim.g.falcon_inactive = 0
+  --   --   -- vim.cmd.colorscheme 'falcon'
+  --   --   -- vim.cmd 'highlight Normal guibg=#000000 ctermbg=0'
+  --   -- end,
+  -- },
   -- { 'ayu-theme/ayu-vim' },
   { 'Shatur/neovim-ayu' },
   -- { 'HoNamDuong/hybrid.nvim', name = 'hybrid' },
-  { 'Mofiqul/vscode.nvim' },
+  -- { 'Mofiqul/vscode.nvim' },
   -- { 'dasupradyumna/midnight.nvim' },
   {
     'zenbones-theme/zenbones.nvim',
@@ -129,15 +129,15 @@ return {
   --   --   vim.cmd.colorscheme 'makurai'
   --   -- end,
   -- },
-  {
-    'cpplain/flexoki.nvim',
-    lazy = false,
-    priority = 1000,
-    opts = {},
-    -- config = function()
-    --   vim.cmd.colorscheme 'flexoki'
-    -- end,
-  },
+  -- {
+  --   'cpplain/flexoki.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {},
+  --   -- config = function()
+  --   --   vim.cmd.colorscheme 'flexoki'
+  --   -- end,
+  -- },
   {
     'folke/tokyonight.nvim',
     lazy = false,
@@ -153,21 +153,29 @@ return {
     priority = 1000,
     opts = {
       italics = false,
-    }, -- Optional
-  },
-  {
-    'catppuccin/nvim',
-    name = 'catppuccin',
+      background = {
+        dark = 'jellybeans-mono',
+        light = 'jellybeans-light',
+      },
+    },
+
     config = function()
-      require('catppuccin').setup {
-        color_overrides = {
-          frappe = {
-            base = '#111111',
-          },
-        },
-      }
+      vim.cmd.colorscheme 'jellybeans'
     end,
   },
+  -- {
+  --   'catppuccin/nvim',
+  --   name = 'catppuccin',
+  --   config = function()
+  --     require('catppuccin').setup {
+  --       color_overrides = {
+  --         frappe = {
+  --           base = '#111111',
+  --         },
+  --       },
+  --     }
+  --   end,
+  -- },
   {
     'sainnhe/gruvbox-material',
     lazy = false,
@@ -270,7 +278,7 @@ return {
   -- },
   -- { 'w0ng/vim-hybrid' },
   -- {
-  --   'JCodV/joko',
+  --   'jvzjvz/joko',
   -- },
   -- {
   --   'webhooked/kanso.nvim',
@@ -296,7 +304,7 @@ return {
   --   end,
   -- },
   {
-    'JCodV/srcery-vim',
+    'jvzjvz/srcery-vim',
     -- 'srcery-colors/srcery-vim',
     config = function()
       -- vim.cmd.colorscheme 'srcery'
@@ -385,7 +393,7 @@ return {
   --   --   }
   --   -- end,
   -- },
-  { 'mcauley-penney/techbase.nvim' },
+  -- { 'mcauley-penney/techbase.nvim' },
   -- {
   --   'ray-x/starry.nvim',
   --   config = function()
@@ -451,7 +459,7 @@ return {
   -- { 'Prince-Ramani/crush.nvim' },
   -- { 's1dsq/alabaster_dark.nvim' },
   -- { 'mdouglasbrett/alabaster-mod.nvim' },
-  { 'oonamo/ef-themes.nvim' },
+  -- { 'oonamo/ef-themes.nvim' },
   -- {
   --   'guillermodotn/nvim-earthsong',
   --   name = 'earthsong',
@@ -479,9 +487,9 @@ return {
   -- },
   {
     'ptdewey/vitesse-nvim',
-    config = function()
-      -- vim.cmd.colorscheme 'vitesse'
-    end,
+    -- config = function()
+    --   vim.cmd.colorscheme 'vitesse'
+    -- end,
   },
   -- {
   --   'abhilash26/mapledark.nvim',
@@ -499,12 +507,12 @@ return {
   --   lazy = false,
   --   priority = 1000,
   -- },
-  {
-    'barrett-ruth/midnight.nvim',
-    -- config = function()
-    --   vim.cmd.colorscheme('midnight')
-    -- end,
-  },
+  -- {
+  --   'barrett-ruth/midnight.nvim',
+  --   -- config = function()
+  --   --   vim.cmd.colorscheme('midnight')
+  --   -- end,
+  -- },
   {
     'shadowy-pycoder/vscode-gruber.nvim',
     dependencies = { 'rktjmp/lush.nvim' },
@@ -515,7 +523,13 @@ return {
     --   vim.cmd('colorscheme vscode-gruber')
     -- end,
   },
-  { 'sainnhe/everforest' },
+  {
+    'sainnhe/everforest',
+    config = function()
+      vim.g.everforest_background = 'hard'
+      -- vim.cmd.colorscheme 'everforest'
+    end,
+  },
   -- { 'uhs-robert/oasis.nvim' },
   -- {
   --   'bjarneo/aether.nvim',
@@ -527,19 +541,21 @@ return {
   -- },
   -- { 'binbandit/aetherglow.nvim' },
   --
-  {
-    'craftzdog/solarized-osaka.nvim',
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
+  -- {
+  --   'craftzdog/solarized-osaka.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {},
+  -- },
   { 'sderev/alabaster.vim' },
   { 'tobi-wan-kenobi/zengarden' },
-  { 'rafikdraoui/couleurs.vim' },
+  -- { 'rafikdraoui/couleurs.vim' },
   -- {
   --   'ricardoraposo/gruvbox-minor.nvim',
   --   lazy = false,
   --   priority = 1000,
   --   opts = {},
   -- },
+  { 'motaz-shokry/gruvbox.nvim' },
+  { 'dybdeskarphet/gruvbox-minimal.nvim' },
 }
