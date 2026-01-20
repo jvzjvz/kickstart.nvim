@@ -792,6 +792,7 @@ require('lazy').setup({
       },
       'folke/lazydev.nvim',
     },
+
     --- @module 'blink.cmp'
     --- @type blink.cmp.Config
     opts = {
@@ -993,5 +994,7 @@ require('lazy').setup({
   },
 })
 
+vim.keymap.del('i', '<Tab>')
+vim.keymap.del('s', '<Tab>')
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

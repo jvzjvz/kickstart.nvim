@@ -160,7 +160,7 @@ return {
     },
 
     config = function()
-      vim.cmd.colorscheme 'jellybeans'
+      vim.cmd.colorscheme 'jellybeans-mono'
     end,
   },
   -- {
@@ -467,14 +467,14 @@ return {
   --   --     vim.cmd("colorscheme earthsong")
   --   -- end
   -- },
-  {
-    'saran13raj/wheat-fox.nvim',
-    priority = 1000,
-    -- config = function()
-    --   require('wheat-fox').setup()
-    --   vim.cmd.colorscheme('wheat-fox')
-    -- end,
-  },
+  -- {
+  --   'saran13raj/wheat-fox.nvim',
+  --   priority = 1000,
+  -- config = function()
+  --   require('wheat-fox').setup()
+  --   vim.cmd.colorscheme('wheat-fox')
+  -- end,
+  -- },
   -- {
   --   'tomstolarczuk/rider.nvim',
   --   -- config = function()
