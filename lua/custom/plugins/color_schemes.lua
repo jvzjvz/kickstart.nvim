@@ -159,9 +159,9 @@ return {
       },
     },
 
-    config = function()
-      vim.cmd.colorscheme 'jellybeans-mono'
-    end,
+    -- config = function()
+    --   vim.cmd.colorscheme 'jellybeans-mono'
+    -- end,
   },
   -- {
   --   'catppuccin/nvim',
@@ -467,14 +467,14 @@ return {
   --   --     vim.cmd("colorscheme earthsong")
   --   -- end
   -- },
-  -- {
-  --   'saran13raj/wheat-fox.nvim',
-  --   priority = 1000,
-  -- config = function()
-  --   require('wheat-fox').setup()
-  --   vim.cmd.colorscheme('wheat-fox')
-  -- end,
-  -- },
+  {
+    'saran13raj/wheat-fox.nvim',
+    priority = 1000,
+    config = function()
+      require('wheat-fox').setup()
+      vim.cmd.colorscheme 'wheat-fox'
+    end,
+  },
   -- {
   --   'tomstolarczuk/rider.nvim',
   --   -- config = function()
@@ -556,6 +556,21 @@ return {
   --   priority = 1000,
   --   opts = {},
   -- },
-  { 'motaz-shokry/gruvbox.nvim' },
+  -- { 'motaz-shokry/gruvbox.nvim' },
   { 'dybdeskarphet/gruvbox-minimal.nvim' },
+  {
+    'szammyboi/dune.nvim',
+    config = function()
+      vim.cmd.colorscheme 'caladan'
+    end,
+  },
+  { 'bakageddy/alduin.nvim' },
+  { 'febyeji/bluehour.nvim' },
+  {
+    'ricardoraposo/gruvbox-minor.nvim',
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
+  { 'itsthomashere/grace.nvim' },
 }
