@@ -163,19 +163,19 @@ return {
     --   vim.cmd.colorscheme 'jellybeans-mono'
     -- end,
   },
-  -- {
-  --   'catppuccin/nvim',
-  --   name = 'catppuccin',
-  --   config = function()
-  --     require('catppuccin').setup {
-  --       color_overrides = {
-  --         frappe = {
-  --           base = '#111111',
-  --         },
-  --       },
-  --     }
-  --   end,
-  -- },
+  {
+    'catppuccin/nvim',
+    name = 'catppuccin',
+    config = function()
+      require('catppuccin').setup {
+        color_overrides = {
+          frappe = {
+            base = '#111111',
+          },
+        },
+      }
+    end,
+  },
   {
     'sainnhe/gruvbox-material',
     lazy = false,
@@ -507,12 +507,12 @@ return {
   --   lazy = false,
   --   priority = 1000,
   -- },
-  -- {
-  --   'barrett-ruth/midnight.nvim',
-  --   -- config = function()
-  --   --   vim.cmd.colorscheme('midnight')
-  --   -- end,
-  -- },
+  {
+    'barrett-ruth/midnight.nvim',
+    -- config = function()
+    --   vim.cmd.colorscheme('midnight')
+    -- end,
+  },
   {
     'shadowy-pycoder/vscode-gruber.nvim',
     dependencies = { 'rktjmp/lush.nvim' },
@@ -547,8 +547,8 @@ return {
   --   priority = 1000,
   --   opts = {},
   -- },
-  { 'sderev/alabaster.vim' },
-  { 'tobi-wan-kenobi/zengarden' },
+  -- { 'sderev/alabaster.vim' },
+  -- { 'tobi-wan-kenobi/zengarden' },
   -- { 'rafikdraoui/couleurs.vim' },
   -- {
   --   'ricardoraposo/gruvbox-minor.nvim',
@@ -561,7 +561,7 @@ return {
   {
     'szammyboi/dune.nvim',
     config = function()
-      vim.cmd.colorscheme 'caladan'
+      -- vim.cmd.colorscheme 'caladan'
     end,
   },
   { 'bakageddy/alduin.nvim' },
@@ -572,5 +572,15 @@ return {
     priority = 1000,
     opts = {},
   },
-  { 'itsthomashere/grace.nvim' },
+  {
+    'ATTron/bebop.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme 'bebop'
+      require('bebop').setup {
+        preset = 'spike',
+      }
+    end,
+  },
 }
