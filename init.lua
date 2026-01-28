@@ -886,6 +886,7 @@ require('lazy').setup({
       -- Simple and easy statusline.
       --  You could remove this setup call if you don't like it,
       --  and try some other statusline plugin
+
       local statusline = require 'mini.statusline'
       -- set use_icons to true if you have a Nerd Font
       statusline.setup { use_icons = vim.g.have_nerd_font }
@@ -999,4 +1000,7 @@ vim.keymap.del('s', '<Tab>')
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 
-vim.cmd.colorscheme 'bebop'
+vim.cmd.colorscheme 'ayu'
+-- vim.g.ministatusline_disable = true
+-- vim.opt.laststatus = 3
+-- vim.opt.statusline = 3
