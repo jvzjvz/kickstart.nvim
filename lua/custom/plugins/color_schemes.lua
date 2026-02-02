@@ -288,21 +288,21 @@ return {
   --     -- vim.cmd.colorscheme 'kanso-zen'
   --   end,
   -- },
-  -- {
-  --   'metalelf0/black-metal-theme-neovim',
-  --   lazy = false,
-  --   priority = 1000,
-  --   config = function()
-  --     require('black-metal').setup {
-  --       alt_bg = true,
-  --     }
-  --     --   vim.cmd.colorscheme 'windir'
-  --     -- require('black-metal').setup {
-  --     -- optional configuration here
-  --     -- }
-  --     -- require('black-metal').load()
-  --   end,
-  -- },
+  {
+    'metalelf0/black-metal-theme-neovim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require('black-metal').setup {
+        alt_bg = true,
+      }
+      --   vim.cmd.colorscheme 'windir'
+      -- require('black-metal').setup {
+      -- optional configuration here
+      -- }
+      -- require('black-metal').load()
+    end,
+  },
   {
     'jvzjvz/srcery-vim',
     -- 'srcery-colors/srcery-vim',
@@ -472,7 +472,7 @@ return {
     priority = 1000,
     config = function()
       require('wheat-fox').setup()
-      vim.cmd.colorscheme 'wheat-fox'
+      -- vim.cmd.colorscheme 'wheat-fox'
     end,
   },
   -- {
@@ -590,4 +590,16 @@ return {
       require('nordic').load()
     end,
   },
+  {
+    'uhs-robert/oasis.nvim',
+    lazy = false,
+    priority = 1000,
+    -- config = function()
+    --   require('oasis').setup() -- (see Configuration below for all customization options)
+    --   vim.cmd.colorscheme 'oasis' -- After setup, apply theme (or any style like "oasis-night")
+    -- end,
+  },
+  -- { '' },
+  -- { '' },
+  -- { '' },
 }

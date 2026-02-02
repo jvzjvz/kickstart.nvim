@@ -812,6 +812,8 @@ require('lazy').setup({
         --
         -- All presets have the following mappings:
         -- <tab>/<s-tab>: move to right/left of your snippet expansion
+        preset = 'default',
+        ['<tab>'] = false,
         -- <c-space>: Open menu or open docs if already open
         -- <c-n>/<c-p> or <up>/<down>: Select next/previous item
         -- <c-e>: Hide menu
@@ -819,7 +821,6 @@ require('lazy').setup({
         --
         -- See :h blink-cmp-config-keymap for defining your own keymap
         -- preset = 'default',
-        preset = 'default',
 
         -- For more advanced Luasnip keymaps (e.g. selecting choice nodes, expansion) see:
         --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
@@ -995,12 +996,12 @@ require('lazy').setup({
   },
 })
 
-vim.keymap.del('i', '<Tab>')
-vim.keymap.del('s', '<Tab>')
+-- vim.keymap.del('i', '<Tab>')
+-- vim.keymap.del('s', '<Tab>')
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 
-vim.cmd.colorscheme 'ayu'
+vim.cmd.colorscheme 'srcery'
 -- vim.g.ministatusline_disable = true
 -- vim.opt.laststatus = 3
 -- vim.opt.statusline = 3
