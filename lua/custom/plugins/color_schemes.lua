@@ -1,17 +1,14 @@
 return {
   {
     'jvzjvz/twilight.nvim',
+  },
+  {
+    'JCodV/autumn-night.nvim',
+    dependencies = { 'rktjmp/lush.nvim' },
     -- config = function()
-    --   vim.cmd.colorscheme 'twilight'
+    --   vim.cmd.colorscheme 'autumn_night'
     -- end,
   },
-  -- {
-  --   'jvzjvz/autumn-night.nvim',
-  --   dependencies = { 'rktjmp/lush.nvim' },
-  --   -- config = function()
-  --   --   vim.cmd.colorscheme 'autumn_night'
-  --   -- end,
-  -- },
   -- {
   --   'jvzjvz/dragon.nvim',
   --   dependencies = { 'rktjmp/lush.nvim' },
@@ -62,17 +59,17 @@ return {
   --   end,
   -- },
   -- { 'luisiacc/gruvbox-baby' },
-  -- {
-  --   'rebelot/kanagawa.nvim',
-  --   config = function()
-  --     require('kanagawa').setup {
-  --       commentStyle = {
-  --         italic = false,
-  --       },
-  --       theme = 'dragon',
-  --     }
-  --   end,
-  -- },
+  {
+    'rebelot/kanagawa.nvim',
+    config = function()
+      require('kanagawa').setup {
+        commentStyle = {
+          italic = false,
+        },
+        theme = 'dragon',
+      }
+    end,
+  },
   -- { 'EdenEast/nightfox.nvim' },
   -- {
   --   'fenetikm/falcon',
@@ -86,7 +83,7 @@ return {
   -- { 'ayu-theme/ayu-vim' },
   { 'Shatur/neovim-ayu' },
   -- { 'HoNamDuong/hybrid.nvim', name = 'hybrid' },
-  -- { 'Mofiqul/vscode.nvim' },
+  { 'Mofiqul/vscode.nvim' },
   -- { 'dasupradyumna/midnight.nvim' },
   {
     'zenbones-theme/zenbones.nvim',
@@ -129,15 +126,15 @@ return {
   --   --   vim.cmd.colorscheme 'makurai'
   --   -- end,
   -- },
-  -- {
-  --   'cpplain/flexoki.nvim',
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = {},
-  --   -- config = function()
-  --   --   vim.cmd.colorscheme 'flexoki'
-  --   -- end,
-  -- },
+  {
+    'cpplain/flexoki.nvim',
+    lazy = false,
+    priority = 1000,
+    opts = {},
+    -- config = function()
+    --   vim.cmd.colorscheme 'flexoki'
+    -- end,
+  },
   {
     'folke/tokyonight.nvim',
     lazy = false,
@@ -154,8 +151,8 @@ return {
     opts = {
       italics = false,
       background = {
-        dark = 'jellybeans-mono',
-        light = 'jellybeans-light',
+        -- dark = 'jellybeans-mono',
+        -- light = 'jellybeans-light',
       },
     },
 
@@ -467,14 +464,14 @@ return {
   --   --     vim.cmd("colorscheme earthsong")
   --   -- end
   -- },
-  {
-    'saran13raj/wheat-fox.nvim',
-    priority = 1000,
-    config = function()
-      require('wheat-fox').setup()
-      -- vim.cmd.colorscheme 'wheat-fox'
-    end,
-  },
+  -- {
+  --   'saran13raj/wheat-fox.nvim',
+  --   priority = 1000,
+  --   config = function()
+  --     require('wheat-fox').setup()
+  --     -- vim.cmd.colorscheme 'wheat-fox'
+  --   end,
+  -- },
   -- {
   --   'tomstolarczuk/rider.nvim',
   --   -- config = function()
@@ -557,7 +554,7 @@ return {
   --   opts = {},
   -- },
   -- { 'motaz-shokry/gruvbox.nvim' },
-  { 'dybdeskarphet/gruvbox-minimal.nvim' },
+  -- { 'dybdeskarphet/gruvbox-minimal.nvim' },
   {
     'szammyboi/dune.nvim',
     config = function()
@@ -586,9 +583,9 @@ return {
     'AlexvZyl/nordic.nvim',
     lazy = false,
     priority = 1000,
-    config = function()
-      require('nordic').load()
-    end,
+    -- config = function()
+    --   require('nordic').load()
+    -- end,
   },
   {
     'uhs-robert/oasis.nvim',
@@ -599,6 +596,27 @@ return {
     --   vim.cmd.colorscheme 'oasis' -- After setup, apply theme (or any style like "oasis-night")
     -- end,
   },
+  -- { 'LunarVim/Colorschemes' },
+  {
+    'Pearljak/terracotta.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      -- vim.cmd([[colorscheme terracotta]])
+    end,
+  },
+  {
+    'webhooked/kanso.nvim',
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    'wheat-thin-wiens/rei.nvim',
+    priority = 1000,
+    opts = {},
+  },
+  { '' },
+  -- { '' },
   -- { '' },
   -- { '' },
   -- { '' },
