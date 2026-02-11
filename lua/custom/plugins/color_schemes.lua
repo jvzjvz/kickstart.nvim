@@ -510,16 +510,16 @@ return {
     --   vim.cmd.colorscheme('midnight')
     -- end,
   },
-  {
-    'shadowy-pycoder/vscode-gruber.nvim',
-    dependencies = { 'rktjmp/lush.nvim' },
-    name = 'vscode-gruber',
-    branch = 'main',
-    priority = 1000,
-    -- config = function()
-    --   vim.cmd('colorscheme vscode-gruber')
-    -- end,
-  },
+  -- {
+  --   'shadowy-pycoder/vscode-gruber.nvim',
+  --   dependencies = { 'rktjmp/lush.nvim' },
+  --   name = 'vscode-gruber',
+  --   branch = 'main',
+  --   priority = 1000,
+  --   -- config = function()
+  --   --   vim.cmd('colorscheme vscode-gruber')
+  --   -- end,
+  -- },
   {
     'sainnhe/everforest',
     config = function()
@@ -563,22 +563,22 @@ return {
   },
   { 'bakageddy/alduin.nvim' },
   { 'febyeji/bluehour.nvim' },
-  {
-    'ricardoraposo/gruvbox-minor.nvim',
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
-  {
-    'ATTron/bebop.nvim',
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require('bebop').setup {
-        preset = 'spike',
-      }
-    end,
-  },
+  -- {
+  --   'ricardoraposo/gruvbox-minor.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {},
+  -- },
+  -- {
+  --   'ATTron/bebop.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  --   config = function()
+  --     require('bebop').setup {
+  --       preset = 'spike',
+  --     }
+  --   end,
+  -- },
   {
     'AlexvZyl/nordic.nvim',
     lazy = false,
