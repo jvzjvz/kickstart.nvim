@@ -1,7 +1,6 @@
 return {
-  {
-    'jvzjvz/twilight.nvim',
-  },
+  { 'jvzjvz/bluegreen.nvim' },
+  { 'jvzjvz/twilight.nvim' },
   {
     'JCodV/autumn-night.nvim',
     dependencies = { 'rktjmp/lush.nvim' },
@@ -181,11 +180,9 @@ return {
       -- vim.g.gruvbox_material_background = 'hard'
       -- vim.g.gruvbox_material_enable_italic = false
       vim.g.gruvbox_material_colors_override = {
-        -- bg0 = { '#111111', '234' },
-        bg0 = { '#000000', '234' },
-        bg1 = { '#000000', '0' },
-        bg2 = { '#000000', '0' },
-        -- bg3 = { '#000000', '0' },
+        -- bg0 = { '#000000', '234' },
+        -- bg1 = { '#000000', '0' },
+        -- bg2 = { '#000000', '0' },
       }
       -- vim.g.gruvbox_material_enable_bold = 1
       -- vim.cmd.colorscheme 'gruvbox-material'

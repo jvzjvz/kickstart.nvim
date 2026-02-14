@@ -7,7 +7,7 @@ vim.opt_global.tabstop = 2
 vim.opt_global.shiftwidth = 2
 
 -- cursor settings
-vim.o.guicursor = 'n-v-c-sm:block,i-ci-ve:block,r-cr-o:block'
+-- vim.o.guicursor = 'n-v-c-sm:block,i-ci-ve:block,r-cr-o:block'
 -- not working
 -- vim.o.termguicolors = true
 -- vim.cmd [[highlight Cursor guifg=black guibg=#00FF00]]
@@ -1001,7 +1001,7 @@ require('lazy').setup({
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 
-vim.cmd.colorscheme 'everforest'
+vim.cmd.colorscheme 'jellybeans'
 -- vim.g.ministatusline_disable = true
 -- vim.opt.laststatus = 3
 -- vim.opt.statusline = 3
