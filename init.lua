@@ -1001,7 +1001,7 @@ require('lazy').setup({
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 
-vim.cmd.colorscheme 'jellybeans'
+vim.cmd.colorscheme 'jellybeans-mono'
 -- vim.g.ministatusline_disable = true
 -- vim.opt.laststatus = 3
 -- vim.opt.statusline = 3
