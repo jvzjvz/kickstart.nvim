@@ -612,8 +612,33 @@ return {
     priority = 1000,
     opts = {},
   },
-  -- { '' },
-  -- { '' },
-  -- { '' },
-  -- { '' },
+  { 'anttikivi/lucid.nvim' },
+  { 'y9san9/y9nika.nvim' },
+  { 'martin-walls/halfdark.nvim' },
+  { 'chuwurny/jissai-nvim' },
+  {
+    'funnyVariable/blank.nvim',
+    lazy = false,
+    priority = 1000,
+    -- config = function()
+    --   vim.cmd("colorscheme blank")
+    -- end,
+  },
+  -- { 'aikhe/fleur.nvim' },
+  -- {
+  --   'IroncladDev/osmium',
+  --   -- config = function()
+  --   --     require("osmium").setup({
+  --   --         integrations = {
+  --   --             gitsigns = true,
+  --   --             telescope = true,
+  --   --             -- [...other integrations]
+  --   --         },
+  --   --         transparent_bg = false,
+  --   --         show_end_of_buffer = false,
+  --   --     })
+  --   --
+  --   --     vim.cmd.colorscheme("osmium")
+  --   -- end,
+  -- },
 }
