@@ -287,9 +287,9 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
-      require('black-metal').setup {
-        alt_bg = true,
-      }
+      -- require('black-metal').setup {
+      --   alt_bg = true,
+      -- }
       --   vim.cmd.colorscheme 'windir'
       -- require('black-metal').setup {
       -- optional configuration here
@@ -298,8 +298,8 @@ return {
     end,
   },
   {
-    'jvzjvz/srcery-vim',
-    -- 'srcery-colors/srcery-vim',
+    -- 'jvzjvz/srcery-vim',
+    'srcery-colors/srcery-vim',
     config = function()
       -- vim.cmd.colorscheme 'srcery'
       -- local light_bronze = '#b99468'
@@ -517,13 +517,13 @@ return {
   --   --   vim.cmd('colorscheme vscode-gruber')
   --   -- end,
   -- },
-  {
-    'sainnhe/everforest',
-    config = function()
-      vim.g.everforest_background = 'hard'
-      -- vim.cmd.colorscheme 'everforest'
-    end,
-  },
+  -- {
+  --   'sainnhe/everforest',
+  --   config = function()
+  --     vim.g.everforest_background = 'hard'
+  --     -- vim.cmd.colorscheme 'everforest'
+  --   end,
+  -- },
   -- { 'uhs-robert/oasis.nvim' },
   -- {
   --   'bjarneo/aether.nvim',
@@ -558,8 +558,8 @@ return {
       -- vim.cmd.colorscheme 'caladan'
     end,
   },
-  { 'bakageddy/alduin.nvim' },
-  { 'febyeji/bluehour.nvim' },
+  -- { 'bakageddy/alduin.nvim' },
+  -- { 'febyeji/bluehour.nvim' },
   -- {
   --   'ricardoraposo/gruvbox-minor.nvim',
   --   lazy = false,
@@ -576,23 +576,23 @@ return {
   --     }
   --   end,
   -- },
-  {
-    'AlexvZyl/nordic.nvim',
-    lazy = false,
-    priority = 1000,
-    -- config = function()
-    --   require('nordic').load()
-    -- end,
-  },
-  {
-    'uhs-robert/oasis.nvim',
-    lazy = false,
-    priority = 1000,
-    -- config = function()
-    --   require('oasis').setup() -- (see Configuration below for all customization options)
-    --   vim.cmd.colorscheme 'oasis' -- After setup, apply theme (or any style like "oasis-night")
-    -- end,
-  },
+  -- {
+  --   'AlexvZyl/nordic.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  --   -- config = function()
+  --   --   require('nordic').load()
+  --   -- end,
+  -- },
+  -- {
+  --   'uhs-robert/oasis.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  --   -- config = function()
+  --   --   require('oasis').setup() -- (see Configuration below for all customization options)
+  --   --   vim.cmd.colorscheme 'oasis' -- After setup, apply theme (or any style like "oasis-night")
+  --   -- end,
+  -- },
   -- { 'LunarVim/Colorschemes' },
   {
     'Pearljak/terracotta.nvim',
@@ -607,15 +607,13 @@ return {
     lazy = false,
     priority = 1000,
   },
-  {
-    'wheat-thin-wiens/rei.nvim',
-    priority = 1000,
-    opts = {},
-  },
-  { 'anttikivi/lucid.nvim' },
+  -- {
+  --   'wheat-thin-wiens/rei.nvim',
+  --   priority = 1000,
+  --   opts = {},
+  -- },
   { 'y9san9/y9nika.nvim' },
   { 'martin-walls/halfdark.nvim' },
-  { 'chuwurny/jissai-nvim' },
   {
     'funnyVariable/blank.nvim',
     lazy = false,
@@ -624,6 +622,13 @@ return {
     --   vim.cmd("colorscheme blank")
     -- end,
   },
+  { 'marko-cerovac/material.nvim' },
+  { 'dybdeskarphet/gruvbox-minimal.nvim' },
+  { 'aktersnurra/no-clown-fiesta.nvim' },
+  { 'simonvic/minerals.nvim' },
+  { 'yorickpeterse/nvim-grey' },
+  { 'jaredgorski/Mies.vim' },
+
   -- { 'aikhe/fleur.nvim' },
   -- {
   --   'IroncladDev/osmium',

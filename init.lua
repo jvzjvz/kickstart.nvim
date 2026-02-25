@@ -1,6 +1,7 @@
 -- neovide settings
 -- vim.g.neovide_fullscreen = true
 -- vim.o.guifont = 'Cousine Nerd Font Mono'
+vim.o.guifont = 'Hack Nerd Font Mono:h12'
 
 -- tab size
 vim.opt_global.tabstop = 2
