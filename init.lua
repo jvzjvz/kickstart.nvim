@@ -1002,7 +1002,19 @@ require('lazy').setup({
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 
-vim.cmd.colorscheme 'jellybeans-mono'
+vim.cmd.colorscheme 'gruvbox-material'
+
+-- colorscheme overrides
+--
+-- vim.api.nvim_create_autocmd('Colorscheme', {
+--   pattern = 'terracotta',
+--   callback = function()
+--     vim.api.nvim_set_hl(0, 'SignColumn', { bg = '#000000' })
+--     vim.api.nvim_set_hl(0, 'LineNr', { bg = '#000000' })
+--     vim.api.nvim_set_hl(0, 'Normal', { bg = '#000000' })
+--     vim.api.nvim_set_hl(0, 'Normal', { bg = '#000000' })
+--   end,
+-- })
 -- vim.g.ministatusline_disable = true
 -- vim.opt.laststatus = 3
 -- vim.opt.statusline = 3

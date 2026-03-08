@@ -1,5 +1,5 @@
 return {
-  { 'jvzjvz/bluegreen.nvim' },
+  -- { 'jvzjvz/bluegreen.nvim' },
   { 'jvzjvz/twilight.nvim' },
   {
     'JCodV/autumn-night.nvim',
@@ -34,7 +34,7 @@ return {
   --   end,
   -- },
   -- { 'YorickPeterse/Autumn.vim' },
-  { 'YorickPeterse/vim-paper' },
+  -- { 'YorickPeterse/vim-paper' },
   -- {
   --   'whizikxd/naysayer-colors.nvim',
   --   lazy = false,
@@ -82,7 +82,7 @@ return {
   -- { 'ayu-theme/ayu-vim' },
   { 'Shatur/neovim-ayu' },
   -- { 'HoNamDuong/hybrid.nvim', name = 'hybrid' },
-  { 'Mofiqul/vscode.nvim' },
+  -- { 'Mofiqul/vscode.nvim' },
   -- { 'dasupradyumna/midnight.nvim' },
   {
     'zenbones-theme/zenbones.nvim',
@@ -125,23 +125,23 @@ return {
   --   --   vim.cmd.colorscheme 'makurai'
   --   -- end,
   -- },
-  {
-    'cpplain/flexoki.nvim',
-    lazy = false,
-    priority = 1000,
-    opts = {},
-    -- config = function()
-    --   vim.cmd.colorscheme 'flexoki'
-    -- end,
-  },
-  {
-    'folke/tokyonight.nvim',
-    lazy = false,
-    opts = {},
-    -- config = function()
-    --   vim.cmd.colorscheme 'tokyonight'
-    -- end,
-  },
+  -- {
+  --   'cpplain/flexoki.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {},
+  --   -- config = function()
+  --   --   vim.cmd.colorscheme 'flexoki'
+  --   -- end,
+  -- },
+  -- {
+  --   'folke/tokyonight.nvim',
+  --   lazy = false,
+  --   opts = {},
+  --   -- config = function()
+  --   --   vim.cmd.colorscheme 'tokyonight'
+  --   -- end,
+  -- },
   -- { 'metalelf0/jellybeans-nvim' },
   {
     'wtfox/jellybeans.nvim',
@@ -179,23 +179,23 @@ return {
       --   vim.o.background = 'dark'
       vim.g.gruvbox_material_background = 'hard'
       -- vim.g.gruvbox_material_enable_italic = false
-      -- vim.g.gruvbox_material_colors_override = {
-      -- bg0 = { '#000000', '234' },
-      -- bg1 = { '#000000', '0' },
-      -- bg2 = { '#000000', '0' },
-      -- }
+      vim.g.gruvbox_material_colors_override = {
+        bg0 = { '#000000', '234' },
+        bg1 = { '#000000', '0' },
+        bg2 = { '#000000', '0' },
+      }
       -- vim.g.gruvbox_material_enable_bold = 1
       -- vim.cmd.colorscheme 'gruvbox-material'
     end,
   },
-  {
-    'slugbyte/lackluster.nvim',
-    lazy = false,
-    config = function()
-      -- vim.cmd.colorscheme 'lackluster-hack'
-      -- vim.cmd 'highlight Normal guibg=#000000 ctermbg=0'
-    end,
-  },
+  -- {
+  --   'slugbyte/lackluster.nvim',
+  --   lazy = false,
+  --   config = function()
+  --     -- vim.cmd.colorscheme 'lackluster-hack'
+  --     -- vim.cmd 'highlight Normal guibg=#000000 ctermbg=0'
+  --   end,
+  -- },
   -- {
   --   'idr4n/github-monochrome.nvim',
   --   --  config = function()
@@ -282,24 +282,24 @@ return {
   --     -- vim.cmd.colorscheme 'kanso-zen'
   --   end,
   -- },
+  -- {
+  --   'metalelf0/black-metal-theme-neovim',
+  --   lazy = false,
+  --   priority = 1000,
+  --   config = function()
+  --     -- require('black-metal').setup {
+  --     --   alt_bg = true,
+  --     -- }
+  --     --   vim.cmd.colorscheme 'windir'
+  --     -- require('black-metal').setup {
+  --     -- optional configuration here
+  --     -- }
+  --     -- require('black-metal').load()
+  --   end,
+  -- },
   {
-    'metalelf0/black-metal-theme-neovim',
-    lazy = false,
-    priority = 1000,
-    config = function()
-      -- require('black-metal').setup {
-      --   alt_bg = true,
-      -- }
-      --   vim.cmd.colorscheme 'windir'
-      -- require('black-metal').setup {
-      -- optional configuration here
-      -- }
-      -- require('black-metal').load()
-    end,
-  },
-  {
-    -- 'jvzjvz/srcery-vim',
-    'srcery-colors/srcery-vim',
+    'jvzjvz/srcery-vim',
+    -- 'srcery-colors/srcery-vim',
     config = function()
       -- vim.cmd.colorscheme 'srcery'
       -- local light_bronze = '#b99468'
@@ -479,12 +479,12 @@ return {
   -- {
   --   'utakotoba/myrrh.nvim',
   -- },
-  {
-    'ptdewey/vitesse-nvim',
-    -- config = function()
-    --   vim.cmd.colorscheme 'vitesse'
-    -- end,
-  },
+  -- {
+  --   'ptdewey/vitesse-nvim',
+  --   -- config = function()
+  --   --   vim.cmd.colorscheme 'vitesse'
+  --   -- end,
+  -- },
   -- {
   --   'abhilash26/mapledark.nvim',
   --   -- lazy = false,
@@ -602,18 +602,18 @@ return {
       -- vim.cmd([[colorscheme terracotta]])
     end,
   },
-  {
-    'webhooked/kanso.nvim',
-    lazy = false,
-    priority = 1000,
-  },
+  -- {
+  --   'webhooked/kanso.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  -- },
   -- {
   --   'wheat-thin-wiens/rei.nvim',
   --   priority = 1000,
   --   opts = {},
   -- },
-  { 'y9san9/y9nika.nvim' },
-  { 'martin-walls/halfdark.nvim' },
+  -- { 'y9san9/y9nika.nvim' },
+  -- { 'martin-walls/halfdark.nvim' },
   {
     'funnyVariable/blank.nvim',
     lazy = false,
@@ -622,11 +622,10 @@ return {
     --   vim.cmd("colorscheme blank")
     -- end,
   },
-  { 'marko-cerovac/material.nvim' },
+  -- { 'marko-cerovac/material.nvim' },
   { 'dybdeskarphet/gruvbox-minimal.nvim' },
-  { 'aktersnurra/no-clown-fiesta.nvim' },
-  { 'simonvic/minerals.nvim' },
-  { 'yorickpeterse/nvim-grey' },
+  -- { 'aktersnurra/no-clown-fiesta.nvim' },
+  -- { 'yorickpeterse/nvim-grey' },
   { 'jaredgorski/Mies.vim' },
 
   -- { 'aikhe/fleur.nvim' },
@@ -646,4 +645,28 @@ return {
   --   --     vim.cmd.colorscheme("osmium")
   --   -- end,
   -- },
+  {
+    'vague-theme/vague.nvim',
+    lazy = false, -- make sure we load this during startup if it is your main colorscheme
+    priority = 1000, -- make sure to load this before all the other plugins
+    -- config = function()
+    --   -- NOTE: you do not need to call setup if you don't want to.
+    --   require("vague").setup({
+    --     -- optional configuration here
+    --   })
+    --   vim.cmd("colorscheme vague")
+    -- end
+  },
+  {
+    'neanias/everforest-nvim',
+    version = false,
+    lazy = false,
+    priority = 1000, -- make sure to load this before all the other start plugins
+    -- Optional; default configuration will be used if setup isn't called.
+    config = function()
+      require('everforest').setup {
+        background = 'hard',
+      }
+    end,
+  },
 }
