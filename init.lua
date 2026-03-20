@@ -4,8 +4,8 @@
 vim.o.guifont = 'Hack Nerd Font Mono:h12'
 
 -- tab size
-vim.opt_global.tabstop = 2
-vim.opt_global.shiftwidth = 2
+vim.opt_global.tabstop = 4
+vim.opt_global.shiftwidth = 4
 
 -- cursor settings
 -- vim.o.guicursor = 'n-v-c-sm:block,i-ci-ve:block,r-cr-o:block'
