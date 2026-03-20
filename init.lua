@@ -4,8 +4,8 @@
 vim.o.guifont = 'Hack Nerd Font Mono:h12'
 
 -- tab size
-vim.opt_global.tabstop = 2
-vim.opt_global.shiftwidth = 2
+vim.opt_global.tabstop = 4
+vim.opt_global.shiftwidth = 4
 
 -- cursor settings
 -- vim.o.guicursor = 'n-v-c-sm:block,i-ci-ve:block,r-cr-o:block'
@@ -958,7 +958,7 @@ require('lazy').setup({
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
   -- require 'kickstart.plugins.debug',
-  require 'kickstart.plugins.indent_line',
+  -- require 'kickstart.plugins.indent_line',
   require 'kickstart.plugins.lint',
   -- require 'kickstart.plugins.autopairs',
   -- require 'kickstart.plugins.neo-tree', -- oil is better

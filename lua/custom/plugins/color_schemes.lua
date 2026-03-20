@@ -669,4 +669,6 @@ return {
       }
     end,
   },
+  { 'bashful-strix/arcana' },
+  { 'Ilm-Alan/venice.vim' },
 }
