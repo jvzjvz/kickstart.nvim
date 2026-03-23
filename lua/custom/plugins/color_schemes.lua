@@ -236,11 +236,11 @@ return {
   -- },
   -- { 'NLKNguyen/papercolor-theme' },
   -- { 'dikiaap/minimalist' },
-  {
-    'steguiosaur/fullerene.nvim',
-    lazy = false,
-    priority = 1000,
-  },
+  -- {
+  --   'steguiosaur/fullerene.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  -- },
   -- {
   --   'nyngwang/memoonry.nvim',
   --   config = function()
@@ -447,7 +447,7 @@ return {
   -- { 'santhosh-tekuri/silence.nvim' },
   -- { 'alexkotusenko/nightgem.nvim' },
   -- { 'xeind/nightingale.nvim' },
-  { 'lucasadelino/conifer.nvim' },
+  -- { 'lucasadelino/conifer.nvim' },
   { 'bluz71/vim-moonfly-colors' },
   -- { 'Sly-Harvey/radium.nvim' },
   -- { 'Prince-Ramani/crush.nvim' },
@@ -501,12 +501,12 @@ return {
   --   lazy = false,
   --   priority = 1000,
   -- },
-  {
-    'barrett-ruth/midnight.nvim',
-    -- config = function()
-    --   vim.cmd.colorscheme('midnight')
-    -- end,
-  },
+  -- {
+  --   'barrett-ruth/midnight.nvim',
+  --   -- config = function()
+  --   --   vim.cmd.colorscheme('midnight')
+  --   -- end,
+  -- },
   -- {
   --   'shadowy-pycoder/vscode-gruber.nvim',
   --   dependencies = { 'rktjmp/lush.nvim' },
@@ -671,4 +671,23 @@ return {
   },
   { 'bashful-strix/arcana' },
   { 'Ilm-Alan/venice.vim' },
+  { 'gouch/vim-ballroom' },
+  { 'marfisc/vorange' },
+  {
+    'AstroNvim/astrotheme',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require('astrotheme').setup {}
+    end,
+  },
+  {
+    'Kopihue/one-dark-pro-max',
+    -- name = "one-dark-pro-max",
+    -- config = function()
+    --     vim.cmd("colorscheme one-dark-pro-max")
+    -- end
+  },
+  { 'dgrco/hearthlight.nvim' },
+  { 'danfry1/lume' },
 }
