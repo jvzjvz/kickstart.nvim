@@ -673,14 +673,14 @@ return {
   { 'Ilm-Alan/venice.vim' },
   { 'gouch/vim-ballroom' },
   { 'marfisc/vorange' },
-  {
-    'AstroNvim/astrotheme',
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require('astrotheme').setup {}
-    end,
-  },
+  -- {
+  --   'AstroNvim/astrotheme',
+  --   lazy = false,
+  --   priority = 1000,
+  --   config = function()
+  --     require('astrotheme').setup {}
+  --   end,
+  -- },
   {
     'Kopihue/one-dark-pro-max',
     -- name = "one-dark-pro-max",
@@ -690,4 +690,8 @@ return {
   },
   { 'dgrco/hearthlight.nvim' },
   { 'danfry1/lume' },
+  { 'harivansh-afk/cozybox.nvim' },
+  { 'ankushbhagats/pastel.nvim' },
+  { 'tomsadowski/tsad_nvim_colorschemes' },
+  -- { 'marcos-venicius/zenburned' },
 }
